@@ -1,0 +1,73 @@
+// Consulta de rutas disponibles para chofer
+Get
+[
+  {
+    idRuta: ,
+    nombreRuta: ,
+    nombreChofer: ,
+    estatus: 
+  }
+]
+
+//Poner en transito una ruta
+Put
+{
+  idRuta: 
+}
+
+//Consulta de clientes por ruta
+Get
+[
+  {
+    idCliente: ,
+    nombre: ,
+    domicilio: ,
+    latitud: ,
+    longitude: 
+  }
+]
+
+//Servicio para levantar incidencias
+Post
+{
+  id: ,
+  idChofer: ,
+  idCliente: ,
+  foto: ,
+  latitud: ,
+  longitud: ,
+  incidencia: ,
+}
+//Servicio para resgitrar el tiempo de entrega por cliente
+Post
+{
+  idCliente: ,
+  idChofer: ,
+  tiempoEntrega: ,
+  latitud: ,
+  longitud: ,
+}
+
+//Servicio para consultar los manifiestos por cliente
+Get
+[
+{
+  "Id": 5199,
+  "Serie": "MAGC3614",
+  "Generador": "ESTRADA JIMENEZ OSCAR EDUARDO",
+  "Domicilio": "San Martín de Porres, ENERMAX.DataLayer.CodigoPostal, León, Guanajuato",
+  "Hash": "94a772aa79b8ae751741a2cbe3e5f2a7",
+  "Detalles":[
+                  {
+                  "GrupoId": 2,
+                  "ArticuloId": 4,
+                  "Cantidad": 0
+                  },
+                  {
+                  "GrupoId": 3,
+                  "ArticuloId": 5,
+                  "Cantidad": 0
+                  }
+  ]
+}
+]
